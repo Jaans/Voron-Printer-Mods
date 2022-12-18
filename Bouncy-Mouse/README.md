@@ -4,7 +4,7 @@ An evolution of the physical skirt button, by adding PCB to simplify wiring, sol
 ![2x Bouncy Mouse PCB installed](Images/Installed_350mm_Skirt.jpg)  
 
 ## Credits and Attribution
-This idea is not original or even novel, with most ideas taken from Voron user `meteyou`'s [gcode_buttons](https://github.com/VoronDesign/VoronUsers/blob/master/legacy_printers/printer_mods/README.md) and adapted to fit my needs after trial and error experiences.
+This _mod_ is not original or even novel, with most concepts taken from Voron user `meteyou`'s [gcode_buttons](https://github.com/VoronDesign/VoronUsers/blob/master/legacy_printers/printer_mods/README.md) and adapted to fit my needs after trial and error experiences.
 
 Thanks to `meteyou` and everyone else who had some incarnation of skirt buttons for the Voron. Thanks to `MakerBogans` Australia 3D printer community for being friendly and supportive human beings.
 
