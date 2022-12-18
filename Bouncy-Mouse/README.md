@@ -43,7 +43,6 @@ I created this because I found the soldering of wires to the switches and LEDs h
 
 
 ## Bill of Materials (BOM)
----
 Work in progress with regard to skirts that are not 350mm.
 
 ### PCB Options
@@ -132,7 +131,6 @@ Refer to each of the following pages for more detailed information:
 
 
 ## Disclaimer
-___
 The advice and suggestions here are in good faith, and offer no warranty accepts no liability by any actions taken by you, in part or in full, from content in this repository.
 
 If you wire or solder incorrectly, use the wrong polarity or voltage, or different resistor sizes then you can damage not only these components but also the connected devices like your MCU controller or GPIO device like Raspberry PI. Don't take on this project if you are not comfortable with holding yourself responsible. 
