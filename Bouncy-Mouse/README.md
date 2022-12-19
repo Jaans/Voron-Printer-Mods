@@ -151,7 +151,7 @@ Refer to each of the following pages for more detailed information:
     
     Assemble PCB, Button, LED, Wires, Crimps, Solder, etc.
     
-    Click [here](./Stage1.md) to view page about this section.
+    Click [here](./Stage2.md) to view page about this section.
 
     <br/>
 
@@ -159,7 +159,7 @@ Refer to each of the following pages for more detailed information:
 
     I use a Raspberry PI 4B and configure pins as input with pull-up resistor enabled.
 
-    Click [here](./Stage1.md) to view page about this section.
+    Click [here](./Stage3.md) to view page about this section.
 
     <br/>
 
@@ -167,7 +167,7 @@ Refer to each of the following pages for more detailed information:
 
     What to do when GPIO pin has been triggered.
 
-    Click [here](./Stage1.md) to view page about this section.
+    Click [here](./Stage4.md) to view page about this section.
 
 
 <br/>
