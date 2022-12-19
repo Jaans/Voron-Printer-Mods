@@ -16,9 +16,9 @@ If you are using 3 keys, then you need to print 3 of each.
 ## Print settings
 - Nothing special. Using standard Voron part print settings should work fine.
 
-- STLs were used to create ABS prints in the photos.
+- ABS used in the photos, but I suppose PLA should work too as its not a high temperature environment. I prefer not to use PLA (which degrades over time) for anything structural.
 
-- Consider level of detail on buttons and changing colors for backlight to come through.
+- Consider level of detail on buttons and changing colors for backlight to come through. I'll add some more key caps over time.
 
 <br/>
 

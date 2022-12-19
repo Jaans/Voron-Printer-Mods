@@ -17,7 +17,7 @@ The idea is not novel in any way and `Bouncy Mouse` is intended to help you buil
 
 Some users even replace / remove their display in favour of this.
 
-Here's the `Bouncy Mouse` PCB (v1 is pictured):
+Here's the `Bouncy Mouse` 3-Key PCB (v1 is pictured):
 ![Bouncy Mouse PCB v1](Images/BouncyMousePCBv1.jpg)
 
 Holds up to three CherryMX key switches (LED optional)
@@ -43,12 +43,24 @@ I created this because I found the soldering of wires to the switches and LEDs h
 
 
 ## Bill of Materials (BOM)
-Work in progress with regard to skirts that are not 350mm.
+The hexagonal voids in the Voron skirts are the same size and spacing across the different Voron v2 size models (250mm vs. 300mm vs. 350mm) - there are just less or more voids (and thus keys).
 
 ### PCB Options
 * `3`-Key PCB - Suitable for 350mm skirt / possibly even for 300mm skirt with PCB extending beyond behind the skirt)
+
+    ![3-Key PCB](Images/BouncyMouse-3-key-front.png)
+    ![3-Key PCB](Images/BouncyMouse-3-key-rear.png)
+
 * `2`-Key PCB - Suitable for 300mm skirt
+
+    ![2-Key PCB](Images/BouncyMouse-2-key-front.png)
+    ![2-Key PCB](Images/BouncyMouse-2-key-rear.png)
+
 * `1`-Key PCB - Suitable for 250mm skirt / small or custom usages
+
+    ![1-Key PCB](Images/BouncyMouse-1-key-front.png)
+    ![1-Key PCB](Images/BouncyMouse-1-key-rear.png)
+
 
 <br/>
 
@@ -62,7 +74,7 @@ Work in progress with regard to skirts that are not 350mm.
 
     * 1x Hexagon Shell Retention Clip
 
-* `N`+1 PIN JST XH through the hole / PCB mount receptacle
+* `N`+1 PIN JST XH through the hole / PCB mount receptacle (marked as J1 on PCB)
 
 * `N`+1 PIN JST XH crimp connector housing
 
@@ -73,22 +85,46 @@ Work in progress with regard to skirts that are not 350mm.
 <br/>
 
 ### Optional LEDs
-The LED key backlight is optional and mine with 3 LEDs per PCB, uses 12v from Octopus. A different resistor size is needed with 24v.
-5v will be too low for 3 LEDs.
+The LED key backlight is optional. 
 
-* 2 PIN JST XH through the hole / PCB mount receptacle
+The LEDs require a current limiting resistor is required or you'll blow them. This is what R1 (marked on PCB) is for.
+The Ohm size of R1 depends on your chosen configuration.
+
+Key points to remember regarding R1:
+* PowerSupply Voltage matters 12v vs. 24v.
+* Number of LEDs matter.
+* 12v is likly a minimum for 3 LEDs. 
+
+A handy resource for calculating an appropriate value for R1 can be found [here](https://ledcalculator.net/#p=12&v=1.6&c=16&n=3&o=s). 
+That link is pre-configured for 3 LEDs, a 12v Power Supply and typical 3mm Polulu LED forward voltages of 1.6v-1.8v.
+
+If you are difficulty getting these figured out, you are welcome to enquire with me in the MakerBogans discord.
+
+
+Here's the BOM for the LED portion of the PCB:
+* 2 PIN JST XH through the hole / PCB mount receptacle (marked as J2 on PCB)
 
 * 2 PIN JST XH crimp connector housing
 
 * 2 PIN JST XH crimp connector female pin
 
-* R1 - Resistor (based on 12v supply)
+* R1 - Resistor values
 
-    * For PCB with 3 LEDs populated, each with forward voltage of 1.6v - 1.8v, use 430-470 Ohm resistor (lower for brigther but shorter life)
 
-    * For PCB with 2 LEDs : (TBA)
+| Number of LEDs | Power Supply | LED forward voltage | LED current rating | R1 range      |
+|:--------------:| ------------:| -------------------:| ------------------:| -------------:|
+|               3|           12v|                 1.6v|                16mA|     430-470ohm|
+|               2|           12v|                 1.6v|                16mA|     530-560ohm|
+|               1|           12v|                 1.6v|                16mA|     640-680ohm|
+| -              | -            | -                   | -                  | -             |
+|               3|           24v|                 1.6v|                16mA|   1100-1200ohm|
+|               2|           24v|                 1.6v|                16mA|   1200-1300ohm|
+| -              | -            | -                   | -                  | -             |
+|               1|            5v|                 1.6v|                16mA|     200-220ohm|
 
-    * For PCB with 1 LED : (TBA)
+    Resistor ranges given to help use available stock. Lower values will be more for brigther but also shorter life.
+
+    I'm not an electronics engineer - so please validate the above for yourself. Suggest you do a little test circuit to see if your chosen LED and R1 value works. Also, please refer to disclaimer section.
 
 <br/>
 

@@ -1,7 +1,7 @@
 # Stage 2 - Physical Build
 Click this link to see [image from `meteyou`'s MOD](https://github.com/VoronDesign/VoronUsers/tree/master/legacy_printers/printer_mods/meteyou/gcode_buttons#how-to-build) that shows an exploded view on how the parts fit together.
 
-What follows are those steps combined with the PCB.
+What follows below, combines that with the PCB.
 
 ![Parts to put together](Images/Parts_Switch_Shell_Clip.jpg)
 
