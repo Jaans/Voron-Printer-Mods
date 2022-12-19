@@ -8,7 +8,12 @@ What follows below, combines that with the PCB.
 <br/>
 
 ## A - Mate the Switch to the Shell
- `CherryMX key switch` fits into the `Hexagon Shell`. Take note of the orientation of the switch and ensure all keyes have the same orientation. The Caps only fit 0 / 180 degrees orientation and cannot be used at 90 angle. So just make sure your keys are the same. 
+ `CherryMX key switch` fits into the `Hexagon Shell`. 
+ 
+ Take note of the orientation of the switch and ensure all keys have the same orientation. 
+ 
+ The Caps only fit 0 / 180 degrees orientation and cannot be used at 90 angle. So just make sure your keys are the same. 
+
 Depending on how you mount the `Bouncy Mouse` PCB, you may need to slot them upside down (or at 180 degrees). 
 ![Switch in Shell Front](Images/Build_SwitchInShell_Front.jpg)
 ![Switch in Shell Read](Images/Build_SwitchInShell_Rear.jpg)
@@ -19,7 +24,8 @@ The image below includes the retention clip already applied (from step C below).
 ![Shell in Skirt Rear](Images/Build_ShellInSkirt_x1_Rear.jpg)
 
 ## C - Use retention clip to keep Shell in the Skirt
-The `Hexagon Retention Clip` slides onto the shell from the back (inside) and holds it into place so it doesn't slide out. 
+The `Hexagon Retention Clip` slides onto the shell from the back (inside) and holds it into place so it doesn't slide out.
+
 *Take note the orientation of this clip as it has little bumps/tabs that need to align with the slots/holes of the shell*
 ![Shell retention alignment](Images/Build_ShellInSkirt_Clip_Align.jpg)
 Here's the whole set front and back installed:
@@ -33,7 +39,7 @@ Insert the Resistor into R1 (polarity doesn't matter) and also the JST connector
 ![Build_PCB_Connectors_and_Resistor](Images/Build_PCB_Components_R1_JST_Rear.jpg)
 Take note of the side of the PCB here - these components come through from the back of the PCB and are soldered on the front. 
 
-If you are not using LED for backlighting, then you can skip adding the 2-pin JST connector for position J2
+If you are not using LED for back-lighting, then you can skip adding the 2-pin JST connector for position J2
 
 *While v2 of the PCB has slightly different spacing, populating the components are the same.*
 
@@ -51,12 +57,13 @@ Here's a side on view (taken during test fit before soldering connectors):
 ![Attach PCB to skirt assembly side view](Images/Build_Attach_PCB_Side.jpg)
 
 ## F - Add LED (Optional)
-*The LED is for backlighting of the `Hexagon Key Cap` and is optional.*
+*The LED is for back-lighting of the `Hexagon Key Cap` and is optional.*
+
 Insert the 3mm LED of your choice in from the front, through the Key Switch body:
 ![LEDs in switch](Images/Build_ShellInSkirt_x3_Front_withLED.jpg)
 Take note of the polarity of the LED and match with the polarity on the PCB (polarity symbols added to v2 PCB - not shown above).
 
-## G - Solder the sandwitch
+## G - Solder the sandwich
 This might be a good time to double check any polarity and whether you have already soldered in your JST connectors (J1/J2) and resistor (R1), __before__ soldering the switches and LEDs.
 
 ![Final assembly - rear](Images/Build_FinalAssembly_Rear.jpg)
@@ -69,7 +76,7 @@ And from the front:
 Installed in the frame:
 ![Installed - 1](Images/Build_Installed_1.jpg)
 
-The connector J2 exclusively power the LEDs. They are independent and do __NOT__ share ground (GND) with the ground (GND) of the switches.
+The connector J2 exclusively powers the LEDs. This independent of J1 and do __NOT__ share ground (GND) with the ground (GND) of the switches.
 
 Pin 1 of connector J1 is the ground (GND) for the GPIO pins, and is shared with each of the keys in parallel. This means you don't have to provide a separate ground for each key GPIO and also that not all key slots have to be used. You can populate just K1 or just K2 for example.
 
@@ -84,6 +91,8 @@ If you use anything other than:
 * non BOM components (like LEDs that do not have a forward voltage of around 1.6v - 1.8v)
 
   **then you need to adjust your R1 value accordingly**.
+
+> Refer to the BOM section for details on selecting a suitably sized resistor for R1.
 
 <br/>
 

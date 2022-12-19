@@ -12,7 +12,9 @@ I'm using my Raspberry PI for GPIO pins and so I chose to crimp Du-Pont style co
 ![Installed - 2](Images/Build_Installed_2.jpg)
 
 ## GPIO PIN selection
-For my personal configuration I used the following GPIO pins from my Rasberry PI 4 (that I had available since I use an accelerometer). You may need to use different PINs - if so, remember to update the pin mappings - refer STAGE 3 and STAGE 4.
+For my personal configuration I used the following GPIO pins from my Raspberry PI 4 (that I had available since I use an accelerometer). 
+
+> You may need to use different PINs - if so, remember to update the pin mappings - refer further down below and STAGE 4.
 
 My left keyboard:
 - GPIO17
@@ -29,7 +31,7 @@ and my right keyboard:
 ![GPIO Assignment](Images/RaspberryPI4B-GPIO-Assignments.png)
 > Attribution: LinuxHint.com owns the original image
 
-The above shows which ground pin I used for the GPIO pins.
+The above also shows which ground pins I used.
 
 
 ## Raspberry PI configuration
@@ -37,7 +39,7 @@ We need to tell the Raspberry PI that we want to use the above GPIO pins as INPU
 
 This is pretty simple to do, but requires a but of Linux / Raspberry PI OS know how.
 
-There should be a lot of additional resources available on how to edit / modify a file on the PI, so I won't rehash that here. You want to either SSH into your PI and use an editor to modify the file, or you could do so via SCP tool like WinSCP (if you are on Windows).
+There should be a lot of additional resources available on how to edit / modify a file on the PI, so I won't rehash that here. You want to either SSH into your PI and use an editor to modify the file, or you could do so remotely via SCP tool like WinSCP (if you are on Windows).
 
 What we want to do is edit the `/boot/config.txt` file to configure GPIO pins at startup:
 

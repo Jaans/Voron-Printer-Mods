@@ -17,7 +17,7 @@ The idea is not novel in any way and `Bouncy Mouse` is intended to help you buil
 
 Some users even replace / remove their display in favour of this.
 
-Here's the `Bouncy Mouse` 3-Key PCB (v1 is pictured):
+Here's the `Bouncy Mouse` 3-Key PCB (v1 is pictured - v2 is current but with minor tweaks):
 ![Bouncy Mouse PCB v1](Images/BouncyMousePCBv1.jpg)
 
 Holds up to three CherryMX key switches (LED optional)
@@ -37,7 +37,7 @@ Holds up to three CherryMX key switches (LED optional)
 ## Do I need Bouncy Mouse
 No, you don't. You can use `meteyou`'s MOD and wire things directly - nothing wrong with it.
 
-I created this because I found the soldering of wires to the switches and LEDs hard and fragile (I solder poorly - it's a hobby for me). Found the PCB held it all together much more firmly and regidly.
+I created this because I found the soldering of wires to the switches and LEDs hard and fragile (I solder poorly - it's a hobby for me). Found the PCB held it all together much more firmly and rigidly.
 
 <br/>
 
@@ -68,11 +68,11 @@ The hexagonal voids in the Voron skirts are the same size and spacing across the
 * `N`x CherryMX switches
 
 * `N`x Printed part set
-    * 1x Hexagon Key Cap
+    * Hexagon Key Cap
 
-    * 1x Hexagon Key Shell
+    * Hexagon Key Shell
 
-    * 1x Hexagon Shell Retention Clip
+    * Hexagon Shell Retention Clip
 
 * `N`+1 PIN JST XH through the hole / PCB mount receptacle (marked as J1 on PCB)
 
@@ -80,7 +80,7 @@ The hexagonal voids in the Voron skirts are the same size and spacing across the
 
 * `N`+1 PIN JST XH crimp connector female pin
 
-* AWG 28 wiring long enough to reach connection points (suggest making this to size at point of installation)
+* AWG 28 wiring long enough to reach connection points (recommend fitting length to size at point of installation)
 
 <br/>
 
@@ -93,12 +93,12 @@ The Ohm size of R1 depends on your chosen configuration.
 Key points to remember regarding R1:
 * PowerSupply Voltage matters 12v vs. 24v.
 * Number of LEDs matter.
-* 12v is likly a minimum for 3 LEDs. 
+* 12v is likely a minimum for 3 LEDs. 
 
 A handy resource for calculating an appropriate value for R1 can be found [here](https://ledcalculator.net/#p=12&v=1.6&c=16&n=3&o=s). 
 That link is pre-configured for 3 LEDs, a 12v Power Supply and typical 3mm Polulu LED forward voltages of 1.6v-1.8v.
 
-If you are difficulty getting these figured out, you are welcome to enquire with me in the MakerBogans discord.
+If you are having difficulty getting these figured out, you are welcome to enquire with me (#Jaans) in the MakerBogans discord.
 
 
 Here's the BOM for the LED portion of the PCB:
@@ -111,7 +111,7 @@ Here's the BOM for the LED portion of the PCB:
 * R1 - Resistor values
 
 
-| Number of LEDs | Power Supply | LED forward voltage | LED current rating | R1 range      |
+| Number of LEDs | Power Supply | LED forward voltage | LED current rating | R1            |
 |:--------------:| ------------:| -------------------:| ------------------:| -------------:|
 |               3|           12v|                 1.6v|                16mA|     430-470ohm|
 |               2|           12v|                 1.6v|                16mA|     530-560ohm|
@@ -122,10 +122,17 @@ Here's the BOM for the LED portion of the PCB:
 | -              | -            | -                   | -                  | -             |
 |               1|            5v|                 1.6v|                16mA|     200-220ohm|
 
-    Resistor ranges given to help use available stock. Lower values will be more for brigther but also shorter life.
+```
+    Resistor ranges given (instead of absolute) to help use available 
+    stock. Lower values will be more for brighter but also shorter life.
 
-    I'm not an electronics engineer - so please validate the above for yourself. Suggest you do a little test circuit to see if your chosen LED and R1 value works. Also, please refer to disclaimer section.
-
+    I'm not an electronics engineer - so please validate the above for 
+    yourself. Suggest you create a little test circuit to see if your 
+    chosen LEDs and R1 value works. 
+    
+    Although this is generally safe should at worst only blow the LED, 
+    bad things can happen - please refer to disclaimer section.
+```
 <br/>
 
 
