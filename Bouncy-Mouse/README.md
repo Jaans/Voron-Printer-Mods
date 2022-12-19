@@ -46,17 +46,17 @@ I created this because I found the soldering of wires to the switches and LEDs h
 The hexagonal voids in the Voron skirts are the same size and spacing across the different Voron v2 size models (250mm vs. 300mm vs. 350mm) - there are just less or more voids (and thus keys).
 
 ### PCB Options
-* `3`-Key PCB - Suitable for 350mm skirt / possibly even for 300mm skirt with PCB extending beyond behind the skirt)
+* `3`-Key PCB - Suitable for [350mm skirt](Images/Skirt_350.png)
 
     ![3-Key PCB](Images/BouncyMouse-3-key-front.png)
     ![3-Key PCB](Images/BouncyMouse-3-key-rear.png)
 
-* `2`-Key PCB - Suitable for 300mm skirt
+* `2`-Key PCB - Suitable for [300mm skirt](Images/Skirt_300.png)
 
     ![2-Key PCB](Images/BouncyMouse-2-key-front.png)
     ![2-Key PCB](Images/BouncyMouse-2-key-rear.png)
 
-* `1`-Key PCB - Suitable for 250mm skirt / small or custom usages
+* `1`-Key PCB - Suitable for [250mm skirt](Images/Skirt_250.png) / small or custom usages
 
     ![1-Key PCB](Images/BouncyMouse-1-key-front.png)
     ![1-Key PCB](Images/BouncyMouse-1-key-rear.png)
