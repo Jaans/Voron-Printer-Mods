@@ -11,10 +11,11 @@ There are various manufacturers of USB "stick cameras" like those for the OV5640
 https://www.aliexpress.com/item/1005003833993617.html?spm=a2g0o.order_list.order_list_main.5.70ce1802KScJvA
 
 # Models
-The check the [CAD](CAD/) and [STL](STL/) folders for the Fusion360 design and the resulting STL model.
+Look in the [CAD](CAD/) and [STL](STL/) folders for the Fusion360 design and the resulting STL model.
 
 # Build
-Printed version (in ABS) of the model.
+
+Printed in ABS to withstand the heat of my chamber.
 
 Used default print settings, as per `#chri.kai.in`'s original [repo](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB).
 
