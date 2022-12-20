@@ -34,29 +34,45 @@ Holds up to three CherryMX key switches (LED optional)
 
 <br/>
 
-## Do I need Bouncy Mouse
+## Do I need Bouncy Mouse?
 No, you don't. You can use `meteyou`'s MOD and wire things directly - nothing wrong with it.
 
 I created this because I found the soldering of wires to the switches and LEDs hard and fragile (I solder poorly - it's a hobby for me). Found the PCB held it all together much more firmly and rigidly.
 
 <br/>
 
+## I'm in - which one do I need?
+The hexagonal voids in the Voron skirts for v2.4, Trident and Switchwire are the same size and have the same spacing between them - there are just less or more voids (for keys).
+
+At the moment there are 3 variations, basically allowing for 1, 2 or 3 key switches.
+
+> Thanks @karlOS and everyone else for your input with the below. The table indicates the _largest_ size model that would still fit for the different Voron models.
+
+| Size  | Switchwire | Trident | 2.4     |
+|------:|:----------:|:-------:|:-------:|
+|  SW   |   3-Key    |    --   |    --   |
+| 250mm |     --     |  3-Key  |  1-Key  |
+| 300mm |     --     |  3-Key  |  2-Key  |
+| 350mm |     --     |  3-Key  |  3-Key  |
+
+There is nothing stopping you from using a smaller 1-Key PCB, even if a larger 3-Key version could fit.
 
 ## Bill of Materials (BOM)
 The hexagonal voids in the Voron skirts are the same size and spacing across the different Voron v2 size models (250mm vs. 300mm vs. 350mm) - there are just less or more voids (and thus keys).
 
 ### PCB Options
-* `3`-Key PCB - Suitable for [350mm skirt](Images/Skirt_350.png)
+Here are the current variations. Refer to [above section](#im-in---which-one-do-i-need) to decide which one to use
+* `3`-Key PCB
 
     ![3-Key PCB](Images/BouncyMouse-3-key-front.png)
     ![3-Key PCB](Images/BouncyMouse-3-key-rear.png)
 
-* `2`-Key PCB - Suitable for [300mm skirt](Images/Skirt_300.png)
+* `2`-Key PCB
 
     ![2-Key PCB](Images/BouncyMouse-2-key-front.png)
     ![2-Key PCB](Images/BouncyMouse-2-key-rear.png)
 
-* `1`-Key PCB - Suitable for [250mm skirt](Images/Skirt_250.png) / small or custom usages
+* `1`-Key PCB
 
     ![1-Key PCB](Images/BouncyMouse-1-key-front.png)
     ![1-Key PCB](Images/BouncyMouse-1-key-rear.png)
