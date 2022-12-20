@@ -190,8 +190,8 @@ Refer to each of the following pages for more detailed information:
 
 
 ## Disclaimer
-The advice and suggestions here are in good faith, and offer no warranty accepts no liability by any actions taken by you, in part or in full, from content in this repository.
+The ideas and suggestions here are meant in good faith, but offer no warranty and accepts no liability for any actions taken by you directly or indirectly, taken in part or in full from the content in this repository.
 
-If you wire or solder incorrectly, use the wrong polarity or voltage, or different resistor sizes then you can damage not only these components but also the connected devices like your MCU controller or GPIO device like Raspberry PI. Don't take on this project if you are not comfortable with holding yourself responsible. 
+You acknowledge that if you wire or solder incorrectly, use the wrong polarity or voltage, or inappropriate resistor sizes, create short-circuits, etc. then you can damage not only these components but also the connected devices like your MCU controller or GPIO device like Raspberry PI. Soldering irons can cause severe burns and start fires - you are assumed competent to perform whatever action you decide. Don't take on this project if you are not comfortable with holding yourself responsible, working with electronics, soldering irons, etc. 
 
 *Plain English: You acknowledge you are responsible for your actions and don't hold me liable for anything whatsoever.*
