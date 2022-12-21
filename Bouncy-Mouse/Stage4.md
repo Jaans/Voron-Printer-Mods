@@ -4,7 +4,7 @@ Last but not the least we need to tell Klipper about the GPIO pins and create G-
 
 I chose to separate my various configuration sections out into separate `.cfg` files like `buttons.cfg` in this case. You do you - that's beyond the scope of this guide.
 
-Here's the content of my `buttons.cfg` file. Adapt to your needs.:
+Here's the content of my [buttons.cfg](Klipper/buttons.cfg) file. Adapt it to your needs:
 
 ```
 # Push Button RPI Pins
@@ -18,27 +18,39 @@ Here's the content of my `buttons.cfg` file. Adapt to your needs.:
 pin: ^!rpi:gpio17
 press_gcode: 
     M117 Z-UP
-    _ZUP            # Custom G-Code macro
 release_gcode:
+   _ZUP            # Custom G-Code macro
 
 [gcode_button Button_Z_Down]
 pin: ^!rpi:gpio27
 press_gcode: 
     M117 Z-DOWN
-    _ZDOWN          # Custom G-Code macro
 release_gcode:
+   _ZDOWN          # Custom G-Code macro
 
 [gcode_button Button_Pause_Resume]
 pin: ^!rpi:gpio22
 press_gcode: 
     M117 PAUSE-RESUME
-#   TODO
+    {% if printer.pause_resume.is_paused %}
+        M117 Resuming...
+        M118 Resumed via skirt button
+        RESUME
+    {% else %}
+        {% if printer.idle_timeout.state != "Printing" %}
+            M117 Not printing.
+            M118 Cannot pause - not currently printing.
+        {% else %}
+            M117 Pausing...
+            M118 Paused via skirt button
+            PAUSE
+        {% endif %}
+    {% endif %}
 release_gcode:
 
 [gcode_button Button_Lights]
 pin: ^!rpi:gpio19
 press_gcode:
-    M117 LIGHTS
     {% if printer['output_pin caselight'].value %}
         SET_PIN PIN=caselight VALUE=0
         status_off
@@ -51,15 +63,27 @@ release_gcode:
 [gcode_button Button_Warmup]
 pin: ^!rpi:gpio26
 press_gcode: 
-    M117 HEAT
+    M117 WARM UP
     WARM_UP         # Custom G-Code macro
 release_gcode:
+
+[delayed_gcode _SHUTDOWN_MACHINE]
+gcode:
+    {% if printer.idle_timeout.state != "Printing" %}
+        SET_PIN PIN=caselight VALUE=0                       # Caselight off
+        status_off                                          # Stealth Burner LED off
+        {action_call_remote_method("shutdown_machine")}     # Invoke moonraker API to shutdown
+    {% else %}
+        M117 No shutdown - busy printing
+        M118 No shutdown - busy printing
+    {% endif %}
 
 [gcode_button Button_Shutdown]
 pin: ^!rpi:gpio21
 press_gcode: 
-    M117 POWER
-#   TODO
+    M117 Shutdown...
+    M118 Shutdown via skirt button...
+    UPDATE_DELAYED_GCODE ID=_SHUTDOWN_MACHINE DURATION=1
 release_gcode:
 ```
 

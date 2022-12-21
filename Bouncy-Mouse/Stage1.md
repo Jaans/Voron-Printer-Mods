@@ -12,6 +12,9 @@ If you are using 3 keys, then you need to print 3 of each.
 
 ![Parts to put together](Images/Parts_Switch_Shell_Clip.jpg)
 
+Here's some sample prints
+![Parts to put together](Images/Parts_Caps.jpg)
+
 
 ## Print settings
 - Nothing special. Using standard Voron part print settings should work fine.
