@@ -146,8 +146,8 @@ Here's the BOM for the LED portion of the PCB:
     yourself. Suggest you create a little test circuit to see if your 
     chosen LEDs and R1 value works. 
     
-    Although this is generally safe should at worst only blow the LED, 
-    bad things can happen - please refer to disclaimer section.
+    Although this is generally safe and *should* at worst only blow the
+    LED, bad things can happen - please refer to disclaimer section.
 ```
 <br/>
 
