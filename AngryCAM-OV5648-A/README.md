@@ -1,4 +1,4 @@
-# Another OV5648 design for Angry CAM USB
+# Another OV5648 front cover design for Angry CAM USB
 
 ![OV5648 Installed](Images/Installed.jpg)
 
